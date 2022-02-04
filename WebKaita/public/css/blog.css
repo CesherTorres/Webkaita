@@ -1,0 +1,37 @@
+.cardblog
+{
+    width: auto;
+    height: 165px;
+}
+
+.cardblogperfil
+{
+    width: auto; 
+    height: 225px;
+}
+
+
+#letra_blog 
+{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#letra_blogadm{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 800px){
+
+    .cardblog,
+    .cardblogperfil
+    {
+        width: auto;
+        height: auto;
+    }
+}
