@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard.index');
 });
+
+route::resource('/configuracion', 'App\Http\Controllers\ConfigurationController');
+
+route::resource('/productos', 'App\Http\Controllers\ProductController');
+
+route::resource('/inventario', 'App\Http\Controllers\InventaryController');
+
+route::resource('/movimientos', 'App\Http\Controllers\MovementController');

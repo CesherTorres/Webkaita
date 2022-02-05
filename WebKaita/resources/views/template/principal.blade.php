@@ -43,22 +43,12 @@
                     </li>
                     <li class="header">Menu Principal</li>
                     <li class="mx-2 my-1">
-                        <a href="/index" class="nav-link px-3 active menu">
-                            <span>
-                                <i class="bi bi-pie-chart-fill me-2"></i>
-                            </span>
-                            <span>
-                                Dashboard
-                            </span>
-                        </a>
-                    </li>
-                    <li class="mx-2 my-1">
                         <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu" role="button" aria-expanded="false" aria-controls="collapsemenu">
                             <span>
                                 <i class="bi bi-people-fill me-2"></i>
                             </span>
                             <span>
-                                Bloggers
+                                Almacen
                             </span>
                             <span class="right-icon ms-auto">
                                 <i class="bi bi-chevron-compact-down"></i>
@@ -67,23 +57,43 @@
                         <div class="collapse" id="collapsemenu">
                             <div>
                                 <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="" class="nav-link px-3 menu">
+                                    <li>
+                                        <a href="/configuracion" class="nav-link px-3 menu">
                                             <span>
                                                 <i class="bi bi-circle me-2"></i>
                                             </span>
                                             <span>
-                                                Nuevo Blogger
+                                                Configuracion
                                             </span>
                                         </a>
-                                    </li> --}}
+                                    </li>
                                     <li>
-                                        <a href="" class="nav-link px-3 menu">
+                                        <a href="/productos" class="nav-link px-3 menu">
                                             <span>
                                                 <i class="bi bi-circle me-2"></i>
                                             </span>
                                             <span>
-                                                Ver Bloggers
+                                                Productos
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/inventario" class="nav-link px-3 menu">
+                                            <span>
+                                                <i class="bi bi-circle me-2"></i>
+                                            </span>
+                                            <span>
+                                                Inventario
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/movimientos" class="nav-link px-3 menu">
+                                            <span>
+                                                <i class="bi bi-circle me-2"></i>
+                                            </span>
+                                            <span>
+                                                Movimientos
                                             </span>
                                         </a>
                                     </li>
@@ -91,249 +101,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="mx-2 my-1">
-                        <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu2" role="button" aria-expanded="false" aria-controls="collapsemenu2">
-                            <span>
-                                <i class="bi bi-file-earmark-richtext-fill me-2"></i>
-                            </span>
-                            <span>
-                                Artículos
-                            </span>
-                            <span class="right-icon ms-auto">
-                                <i class="bi bi-chevron-compact-down"></i>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapsemenu2">
-                            <div>
-                                <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Nuevo Artículo
-                                            </span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Ver Artículos
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mx-2 my-1">
-                        <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu3" role="button" aria-expanded="false" aria-controls="collapsemenu2">
-                            <span>
-                                <i class="bi bi-grid-fill me-2"></i>
-                            </span>
-                            <span>
-                                Categorías
-                            </span>
-                            <span class="right-icon ms-auto">
-                                <i class="bi bi-chevron-compact-down"></i>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapsemenu3">
-                            <div>
-                                <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="{{url('categorias/create')}}" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Nueva Categoría
-                                            </span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Ver Categorías
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mx-2 my-1">
-                        <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu4" role="button" aria-expanded="false" aria-controls="collapsemenu2">
-                            <span>
-                                <i class="bi bi-tag-fill me-2"></i>
-                            </span>
-                            <span>
-                                Etiquetas
-                            </span>
-                            <span class="right-icon ms-auto">
-                                <i class="bi bi-chevron-compact-down"></i>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapsemenu4">
-                            <div>
-                                <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="{{url('categorias/create')}}" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Nueva Categoría
-                                            </span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Ver Etiquetas
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mx-2 my-1">
-                        <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu5" role="button" aria-expanded="false" aria-controls="collapsemenu3">
-                            <span>
-                                <i class="bi bi-boxes me-2"></i>
-                            </span>
-                            <span>
-                                Proyectos
-                            </span>
-                            <span class="right-icon ms-auto">
-                                <i class="bi bi-chevron-compact-down"></i>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapsemenu5">
-                            <div>
-                                <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="{{url('proyectos/create')}}" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Nuevo Proyecto
-                                            </span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Ver Proyectos
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mx-2 my-1">
-                        <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu6" role="button" aria-expanded="false" aria-controls="collapsemenu3">
-                            <span>
-                                <i class="bi bi-diagram-3-fill me-2"></i>
-                            </span>
-                            <span>
-                                Servicios
-                            </span>
-                            <span class="right-icon ms-auto">
-                                <i class="bi bi-chevron-compact-down"></i>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapsemenu6">
-                            <div>
-                                <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="{{url('servicios/create')}}" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Nuevo Servicio
-                                            </span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Ver Servicios
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mx-2 my-1">
-                        <a class="nav-link px-3 sidebar-link menu" data-bs-toggle="collapse" href="#collapsemenu7" role="button" aria-expanded="false" aria-controls="collapsemenu4">
-                            <span>
-                                <i class="bi bi-person-badge-fill me-2"></i>
-                            </span>
-                            <span>
-                                Equipo
-                            </span>
-                            <span class="right-icon ms-auto">
-                                <i class="bi bi-chevron-compact-down"></i>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapsemenu7">
-                            <div>
-                                <ul class="navbar-nav ps-3">
-                                    {{-- <li>
-                                        <a href="/personal_index" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Nuevo Miembro
-                                            </span>
-                                        </a>
-                                    </li> --}}
-                                    <li>
-                                        <a href="" class="nav-link px-3 menu">
-                                            <span>
-                                                <i class="bi bi-circle me-2"></i>
-                                            </span>
-                                            <span>
-                                                Ver Miembros
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="header">Mas Opciones</li>
-                    <li class="mx-2">
-                        <a href="" class="nav-link px-3 menu d-inline-flex">
-                            <span class="material-icons text-secondary mt-1 me-2">donut_large</span>
-                            <span class="my-1">
-                                Configuración
-                            </span>
-                        </a>
-                    </li>
+                    
 
                     <li class="mx-2">
                         <a href="" class="nav-link px-3 menu d-inline-flex">
@@ -397,7 +165,7 @@
         <!-- fin navbar -->
 
         <!-- principal -->
-            <div class="container-fluid py-5">
+            <div class="container-fluid py-5 mb-3">
                @yield('content')
             </div>
         <!-- fin principal -->
@@ -406,7 +174,7 @@
         <footer class="footer pb-0 fixed-bottom shadow-lg mt-5 pt-3 border-top">
             <div class="container-fluid">
                 <div class="text-center text-lg-end ">
-                    <p>Copyright © 2021 <a href="#" style="text-decoration: none;" class="text-secondary fw-bold">CUANTICA Group</a> - Todos los derechos Reservados</p>
+                    <p>Copyright © 2021 <a href="#" style="text-decoration: none; color: rgb(60, 190, 48);" class="fw-bold">Kaita - Salud y Belleza Natural</a> - Todos los derechos Reservados</p>
                 </div>
             </div>
         </footer>
